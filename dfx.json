@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "dfx": "0.9.3",
+  "canisters": {
+    "cron_heartbeat": {
+      "type": "rust",
+      "package": "cron_heartbeat",
+      "candid": "src/cron_heartbeat/cron_heartbeat.did"
+    },
+    "cron_heartbeat_assets": {
+      "type": "assets",
+      "source": [
+        "src/cron_heartbeat_assets/assets"
+      ],
+      "dependencies": [
+        "cron_heartbeat"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
