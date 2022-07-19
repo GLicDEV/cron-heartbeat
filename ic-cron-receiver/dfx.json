@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "dfx": "0.9.3",
+  "canisters": {
+    "ic_cron_receiver": {
+      "type": "rust",
+      "package": "ic_cron_receiver",
+      "candid": "src/ic_cron_receiver/ic_cron_receiver.did"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}

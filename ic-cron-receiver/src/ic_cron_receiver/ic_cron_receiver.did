@@ -1,0 +1,5 @@
+service : {
+    "greet": (text) -> (text) query;
+    "add": (text) -> (bool);
+    "getAll" : () -> (vec text) query;
+}
